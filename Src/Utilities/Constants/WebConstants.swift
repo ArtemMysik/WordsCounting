@@ -10,7 +10,7 @@ import Foundation
 
 enum WebConstants {
   
-  struct Router {
+  enum Router {
     static let baseURL = "https://apiecho.cf/doc/swagger.json"
   }
   

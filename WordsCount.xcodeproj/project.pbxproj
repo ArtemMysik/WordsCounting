@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC8F95AC20B371EE00C12555 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8F95AB20B371EE00C12555 /* SignupViewController.swift */; };
 		ACB1F39820B3495100D2A485 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB1F39720B3495100D2A485 /* AppDelegate.swift */; };
 		ACB1F39D20B3495100D2A485 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB1F39B20B3495100D2A485 /* Main.storyboard */; };
 		ACB1F39F20B3495100D2A485 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACB1F39E20B3495100D2A485 /* Assets.xcassets */; };
 		ACB1F3A220B3495100D2A485 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB1F3A020B3495100D2A485 /* LaunchScreen.storyboard */; };
 		ACB1F3B020B349A800D2A485 /* WebConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB1F3AF20B349A800D2A485 /* WebConstants.swift */; };
 		ACB1F3B420B34B4500D2A485 /* WordsCount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB1F3B320B34B4500D2A485 /* WordsCount.storyboard */; };
+		ACB1F3B920B3539300D2A485 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB1F3B820B3539300D2A485 /* LoginViewController.swift */; };
+		ACB1F3BD20B3706700D2A485 /* UIDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB1F3BC20B3706700D2A485 /* UIDecorator.swift */; };
+		ACB1F3C020B370E400D2A485 /* TextConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB1F3BF20B370E400D2A485 /* TextConstants.swift */; };
+		ACF7F5F920B4895700CB6D6D /* UIViewController+HideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7F5F820B4895700CB6D6D /* UIViewController+HideKeyboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC8F95AB20B371EE00C12555 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		ACB1F39420B3495100D2A485 /* WordsCount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordsCount.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB1F39720B3495100D2A485 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACB1F39C20B3495100D2A485 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -24,6 +30,10 @@
 		ACB1F3A320B3495100D2A485 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACB1F3AF20B349A800D2A485 /* WebConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebConstants.swift; sourceTree = "<group>"; };
 		ACB1F3B320B34B4500D2A485 /* WordsCount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WordsCount.storyboard; sourceTree = "<group>"; };
+		ACB1F3B820B3539300D2A485 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		ACB1F3BC20B3706700D2A485 /* UIDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDecorator.swift; sourceTree = "<group>"; };
+		ACB1F3BF20B370E400D2A485 /* TextConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextConstants.swift; sourceTree = "<group>"; };
+		ACF7F5F820B4895700CB6D6D /* UIViewController+HideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+HideKeyboard.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +47,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC8F95A820B371C900C12555 /* SignupModule */ = {
+			isa = PBXGroup;
+			children = (
+				AC8F95A920B371D700C12555 /* View */,
+				AC8F95AA20B371DC00C12555 /* Presenter */,
+			);
+			path = SignupModule;
+			sourceTree = "<group>";
+		};
+		AC8F95A920B371D700C12555 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC8F95AB20B371EE00C12555 /* SignupViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC8F95AA20B371DC00C12555 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		ACB1F38B20B3495100D2A485 = {
 			isa = PBXGroup;
 			children = (
@@ -68,7 +102,9 @@
 		ACB1F3A920B3495700D2A485 /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				ACF7F5F720B4894500CB6D6D /* Extensions */,
 				ACB1F3AC20B3498F00D2A485 /* UserStories */,
+				ACB1F3BA20B3704700D2A485 /* Services */,
 				ACB1F3AB20B3498300D2A485 /* Utilities */,
 			);
 			path = Src;
@@ -95,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				ACB1F3AF20B349A800D2A485 /* WebConstants.swift */,
+				ACB1F3BF20B370E400D2A485 /* TextConstants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -102,6 +139,8 @@
 		ACB1F3B120B34B1700D2A485 /* LoginUserStory */ = {
 			isa = PBXGroup;
 			children = (
+				ACB1F3B520B352EC00D2A485 /* LoginModule */,
+				AC8F95A820B371C900C12555 /* SignupModule */,
 				ACB1F39B20B3495100D2A485 /* Main.storyboard */,
 			);
 			path = LoginUserStory;
@@ -113,6 +152,54 @@
 				ACB1F3B320B34B4500D2A485 /* WordsCount.storyboard */,
 			);
 			path = WordsCountUserStory;
+			sourceTree = "<group>";
+		};
+		ACB1F3B520B352EC00D2A485 /* LoginModule */ = {
+			isa = PBXGroup;
+			children = (
+				ACB1F3B620B3537000D2A485 /* View */,
+				ACB1F3B720B3537600D2A485 /* Presenter */,
+			);
+			path = LoginModule;
+			sourceTree = "<group>";
+		};
+		ACB1F3B620B3537000D2A485 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ACB1F3B820B3539300D2A485 /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ACB1F3B720B3537600D2A485 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		ACB1F3BA20B3704700D2A485 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ACB1F3BB20B3705900D2A485 /* UI */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		ACB1F3BB20B3705900D2A485 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				ACB1F3BC20B3706700D2A485 /* UIDecorator.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		ACF7F5F720B4894500CB6D6D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ACF7F5F820B4895700CB6D6D /* UIViewController+HideKeyboard.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,7 +275,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC8F95AC20B371EE00C12555 /* SignupViewController.swift in Sources */,
+				ACB1F3B920B3539300D2A485 /* LoginViewController.swift in Sources */,
+				ACB1F3BD20B3706700D2A485 /* UIDecorator.swift in Sources */,
+				ACF7F5F920B4895700CB6D6D /* UIViewController+HideKeyboard.swift in Sources */,
 				ACB1F39820B3495100D2A485 /* AppDelegate.swift in Sources */,
+				ACB1F3C020B370E400D2A485 /* TextConstants.swift in Sources */,
 				ACB1F3B020B349A800D2A485 /* WebConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,11 +421,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W8QQ885R5K;
 				INFOPLIST_FILE = WordsCount/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wordscount.artem.mysik.WordsCount;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -344,11 +437,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W8QQ885R5K;
 				INFOPLIST_FILE = WordsCount/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wordscount.artem.mysik.WordsCount;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
