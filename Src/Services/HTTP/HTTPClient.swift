@@ -53,6 +53,12 @@ class HTTPClient {
     }
     
     private func formReplyByHTTPStatus<T>(result: Any?, statusCode: HTTPStatusCode, done: @escaping (DataResponseRessult<T>) -> Void) {
+        guard statusCode != .unauthorized else {
+            APIClient.shared.logout()
+            
+            return
+        }
+        
         guard let json = result as? JSON else {
             done(.fail(message: WebConstants.FailMessages.responseError))
             

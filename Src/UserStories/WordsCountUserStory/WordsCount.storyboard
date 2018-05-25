@@ -71,7 +71,11 @@
                                 <segue destination="hkU-y8-uNI" kind="show" id="Fqd-j9-6gw"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="logout" id="AVC-vK-5ml"/>
+                        <barButtonItem key="rightBarButtonItem" image="logout" id="AVC-vK-5ml">
+                            <connections>
+                                <action selector="didTouchLogoutButton:" destination="nVZ-mX-wnD" id="4wQ-YN-weS"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="9ei-TG-oy6" id="cB2-5H-oEK"/>

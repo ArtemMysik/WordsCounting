@@ -10,6 +10,8 @@
 		AC57979720B8288100BB7510 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC57979620B8288100BB7510 /* TextViewController.swift */; };
 		AC5884BC20B845F7002FA65C /* UIViewController+ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5884BB20B845F7002FA65C /* UIViewController+ActivityIndicator.swift */; };
 		AC5884BE20B84B12002FA65C /* ActivityShowable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5884BD20B84B12002FA65C /* ActivityShowable.swift */; };
+		AC5884C220B85315002FA65C /* KeychainConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5884C020B85314002FA65C /* KeychainConfiguration.swift */; };
+		AC5884C320B85315002FA65C /* KeychainValueItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5884C120B85314002FA65C /* KeychainValueItem.swift */; };
 		AC8F95AC20B371EE00C12555 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8F95AB20B371EE00C12555 /* SignupViewController.swift */; };
 		ACB1F39820B3495100D2A485 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB1F39720B3495100D2A485 /* AppDelegate.swift */; };
 		ACB1F39D20B3495100D2A485 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB1F39B20B3495100D2A485 /* Main.storyboard */; };
@@ -53,6 +55,9 @@
 		AC57979620B8288100BB7510 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		AC5884BB20B845F7002FA65C /* UIViewController+ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ActivityIndicator.swift"; sourceTree = "<group>"; };
 		AC5884BD20B84B12002FA65C /* ActivityShowable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityShowable.swift; sourceTree = "<group>"; };
+		AC5884C020B85314002FA65C /* KeychainConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainConfiguration.swift; sourceTree = "<group>"; };
+		AC5884C120B85314002FA65C /* KeychainValueItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainValueItem.swift; sourceTree = "<group>"; };
+		AC5884C420B8532A002FA65C /* WordsCount.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WordsCount.entitlements; sourceTree = "<group>"; };
 		AC8F95AB20B371EE00C12555 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		ACB1F39420B3495100D2A485 /* WordsCount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordsCount.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB1F39720B3495100D2A485 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +119,15 @@
 			path = TextModule;
 			sourceTree = "<group>";
 		};
+		AC5884BF20B85314002FA65C /* KeyChain */ = {
+			isa = PBXGroup;
+			children = (
+				AC5884C020B85314002FA65C /* KeychainConfiguration.swift */,
+				AC5884C120B85314002FA65C /* KeychainValueItem.swift */,
+			);
+			path = KeyChain;
+			sourceTree = "<group>";
+		};
 		AC8F95A820B371C900C12555 /* SignupModule */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +177,7 @@
 		ACB1F39620B3495100D2A485 /* WordsCount */ = {
 			isa = PBXGroup;
 			children = (
+				AC5884C420B8532A002FA65C /* WordsCount.entitlements */,
 				ACB1F39720B3495100D2A485 /* AppDelegate.swift */,
 				ACB1F39E20B3495100D2A485 /* Assets.xcassets */,
 				ACB1F3A020B3495100D2A485 /* LaunchScreen.storyboard */,
@@ -263,6 +278,7 @@
 			children = (
 				ACF7F5FB20B48CD600CB6D6D /* APIClient.swift */,
 				ACF7F5FD20B48D1A00CB6D6D /* HTTP */,
+				AC5884BF20B85314002FA65C /* KeyChain */,
 				ACB1F3BB20B3705900D2A485 /* UI */,
 				ACB6F45C20B7FA450047F659 /* GlobalRoute */,
 			);
@@ -480,6 +496,11 @@
 					ACB1F39320B3495100D2A485 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -584,6 +605,7 @@
 				ACB6F45320B7E5E60047F659 /* SignupUserInfo.swift in Sources */,
 				ACB1F3B920B3539300D2A485 /* LoginViewController.swift in Sources */,
 				AC5884BC20B845F7002FA65C /* UIViewController+ActivityIndicator.swift in Sources */,
+				AC5884C320B85315002FA65C /* KeychainValueItem.swift in Sources */,
 				ACB1F3BD20B3706700D2A485 /* UIDecorator.swift in Sources */,
 				ACF7F5FC20B48CD600CB6D6D /* APIClient.swift in Sources */,
 				ACB6F45F20B7FA8C0047F659 /* StoryboardConstants.swift in Sources */,
@@ -593,6 +615,7 @@
 				ACF7F5FF20B48FCD00CB6D6D /* Router.swift in Sources */,
 				ACB6F46E20B8199A0047F659 /* CharacterQuantityViewModel.swift in Sources */,
 				ACF7F60220B4947600CB6D6D /* Locale.swift in Sources */,
+				AC5884C220B85315002FA65C /* KeychainConfiguration.swift in Sources */,
 				ACF7F60720B4969C00CB6D6D /* HTTPStatusCode.swift in Sources */,
 				ACB6F44520B774CD0047F659 /* LoginPresenter.swift in Sources */,
 				AC5884BE20B84B12002FA65C /* ActivityShowable.swift in Sources */,
@@ -745,6 +768,7 @@
 			baseConfigurationReference = 7649465D35A08158944EDAE8 /* Pods-WordsCount.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WordsCount/WordsCount.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W8QQ885R5K;
 				INFOPLIST_FILE = WordsCount/Info.plist;
@@ -762,6 +786,7 @@
 			baseConfigurationReference = CA6C906E1AE2C2FA7C2A2091 /* Pods-WordsCount.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WordsCount/WordsCount.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W8QQ885R5K;
 				INFOPLIST_FILE = WordsCount/Info.plist;

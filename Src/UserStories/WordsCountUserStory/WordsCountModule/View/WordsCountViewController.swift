@@ -39,6 +39,11 @@ class WordsCountViewController: UIViewController {
         }
     }
     
+    //MARK: - Interface Handlers
+    @IBAction func didTouchLogoutButton(_ sender: UIBarButtonItem) {
+        presenter.triggerLogoutButtonTouch()
+    }
+    
 }
 
 //MARK: - Extensions

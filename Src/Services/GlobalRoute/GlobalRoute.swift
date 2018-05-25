@@ -17,7 +17,11 @@ enum GlobalRouteScreenType {
 struct GlobalRoute {
     
     static func setupFirstScreen() {
-        
+        if APIClient.shared.loadTokenFromKeyChain() {
+            setScreen(type: .wordsCount)
+        } else {
+            setScreen(type: .login)
+        }
     }
     
     static func setScreen(type: GlobalRouteScreenType) {

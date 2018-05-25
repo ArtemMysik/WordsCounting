@@ -13,6 +13,7 @@ protocol WordsCountViewOutput {
     func itemFor(indexPath: IndexPath) -> CharacterQuantityViewModel
     func itemsCount() -> Int
     func titleForHeader() -> String
+    func triggerLogoutButtonTouch()
 }
 
 class WordsCountPresenter: WordsCountViewOutput {
@@ -52,6 +53,10 @@ class WordsCountPresenter: WordsCountViewOutput {
     
     func titleForHeader() -> String {
         return dataText
+    }
+    
+    func triggerLogoutButtonTouch() {
+        APIClient.shared.logout()
     }
     
 }
