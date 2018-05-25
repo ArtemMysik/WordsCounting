@@ -255,11 +255,20 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		AC98064620B866E200A56FA1 /* ManualFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC5884C520B86267002FA65C /* IQKeyboardManagerSwift */,
+			);
+			path = ManualFrameworks;
+			sourceTree = "<group>";
+		};
 		ACB1F38B20B3495100D2A485 = {
 			isa = PBXGroup;
 			children = (
 				ACB1F3A920B3495700D2A485 /* Src */,
 				ACB1F39620B3495100D2A485 /* WordsCount */,
+				AC98064620B866E200A56FA1 /* ManualFrameworks */,
 				ACB1F39520B3495100D2A485 /* Products */,
 				F8258A218DEADF972A78A4AA /* Pods */,
 				CE535F1F9DDFE18136E8181D /* Frameworks */,
@@ -546,7 +555,6 @@
 		CE535F1F9DDFE18136E8181D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AC5884C520B86267002FA65C /* IQKeyboardManagerSwift */,
 				C29E22E78D36D5CF04BC6FE0 /* Pods_WordsCount.framework */,
 			);
 			name = Frameworks;
