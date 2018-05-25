@@ -97,7 +97,7 @@ extension Router: URLRequestConvertible {
         var urlRequest = URLRequest(url: fullURL)
         urlRequest.addValue(WebConstants.Router.contentTypeJSONValue,
                             forHTTPHeaderField: WebConstants.Router.contentTypeHeader)
-        let user = APIClient.shared.user
+        
         if let accessToken = APIClient.shared.token {
             urlRequest.addValue(WebConstants.Router.tokenPrefixValue + accessToken,
                                 forHTTPHeaderField: WebConstants.Router.authorizationHeader)
