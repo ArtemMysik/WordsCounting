@@ -18,7 +18,9 @@ class HTTPClient {
     //MARK: - Public Methods
     func request<T>(router: Router, completion: @escaping (DataResponseRessult<T>) -> Void) {
         if NetworkReachabilityManager()?.isReachable ?? false {
+            UIApplication.shared.isNetworkActivityIndicatorVisible = true
             Alamofire.request(router).responseJSON(completionHandler: { [weak self] (response) in
+                UIApplication.shared.isNetworkActivityIndicatorVisible = false
                 self?.proceedResponse(response, done: completion)
             })
         } else {

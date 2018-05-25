@@ -10,10 +10,11 @@ import UIKit
 
 protocol WordsCountViewInput: ActivityShowable {
     func reloadTable()
-    func makeNavigationButtonEnable()
+    func makeNavigationButtonEnable(isEnabled: Bool)
+    func showError(_ string: String)
 }
 
-class WordsCountViewController: UIViewController {
+class WordsCountViewController: UIViewController, AlertMessageShowing {
     
     //MARK: - Properties
     @IBOutlet weak var tableView: UITableView!
@@ -44,6 +45,9 @@ class WordsCountViewController: UIViewController {
         presenter.triggerLogoutButtonTouch()
     }
     
+    @IBAction func didTouchReloadButton(_ sender: UIBarButtonItem) {
+        presenter.triggerReloadButtonTouch()
+    }
 }
 
 //MARK: - Extensions
@@ -55,8 +59,12 @@ extension WordsCountViewController: WordsCountViewInput {
         tableView.reloadData()
     }
     
-    func makeNavigationButtonEnable() {
-        navigationItem.leftBarButtonItem?.isEnabled = true
+    func makeNavigationButtonEnable(isEnabled: Bool) {
+        navigationItem.leftBarButtonItem?.isEnabled = isEnabled
+    }
+    
+    func showError(_ string: String) {
+        showAlert(message: string, handler: nil)
     }
     
 }

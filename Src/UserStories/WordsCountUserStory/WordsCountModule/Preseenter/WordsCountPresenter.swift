@@ -14,6 +14,7 @@ protocol WordsCountViewOutput {
     func itemsCount() -> Int
     func titleForHeader() -> String
     func triggerLogoutButtonTouch()
+    func triggerReloadButtonTouch()
 }
 
 class WordsCountPresenter: WordsCountViewOutput {
@@ -22,8 +23,8 @@ class WordsCountPresenter: WordsCountViewOutput {
     weak var view: WordsCountViewInput!
     fileprivate var dataSource = [CharacterQuantityViewModel]()
     fileprivate var dataText = String()
-    
     fileprivate var wordsCountDataCreator = WordsCountDataCreationWorker()
+    fileprivate var isWaitingForText = false
     
     //MARK: - Life Cycle
     required init(view: WordsCountViewInput) {
@@ -39,7 +40,7 @@ class WordsCountPresenter: WordsCountViewOutput {
     fileprivate func proceedText(_ string: String) {
         dataSource = wordsCountDataCreator.createDataSource(from: string)
         dataText = string
-        view.makeNavigationButtonEnable()
+        view.makeNavigationButtonEnable(isEnabled: true)
         view.reloadTable()
     }
     
@@ -59,6 +60,10 @@ class WordsCountPresenter: WordsCountViewOutput {
         APIClient.shared.logout()
     }
     
+    func triggerReloadButtonTouch() {
+        requestText()
+    }
+    
 }
 
 //MARK: - Extensions
@@ -67,14 +72,20 @@ class WordsCountPresenter: WordsCountViewOutput {
 extension WordsCountPresenter {
     
     func requestText() {
-        view.startActivityIndicator()
+        guard !isWaitingForText else { return }
+        isWaitingForText = true
+//        view.startActivityIndicator()
         
         APIClient.shared.getText { [weak self] (result) in
-            self?.view.stopActivityIndicator()
+            self?.isWaitingForText = false
+//            self?.view.stopActivityIndicator()
             
             switch result {
             case .stringSuccess(let string):
                 self?.proceedText(string)
+                
+            case .fail(let message):
+                self?.view.showError(message)
                 
             default:
                 break
