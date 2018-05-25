@@ -16,4 +16,8 @@ enum TextConstants {
         static let nicknamePlaceholder = "Nickname"
     }
     
+    enum Alert {
+        static let okAction = "OK"
+    }
+    
 }

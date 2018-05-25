@@ -17,10 +17,33 @@
 		ACB1F3B920B3539300D2A485 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB1F3B820B3539300D2A485 /* LoginViewController.swift */; };
 		ACB1F3BD20B3706700D2A485 /* UIDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB1F3BC20B3706700D2A485 /* UIDecorator.swift */; };
 		ACB1F3C020B370E400D2A485 /* TextConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB1F3BF20B370E400D2A485 /* TextConstants.swift */; };
+		ACB6F44120B76FC70047F659 /* JSONType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB6F44020B76FC70047F659 /* JSONType.swift */; };
+		ACB6F44520B774CD0047F659 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB6F44420B774CD0047F659 /* LoginPresenter.swift */; };
+		ACB6F44820B77E1C0047F659 /* LoginUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB6F44720B77E1C0047F659 /* LoginUserInfo.swift */; };
+		ACB6F44B20B7808B0047F659 /* AlertMessageShowing.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB6F44A20B7808B0047F659 /* AlertMessageShowing.swift */; };
+		ACB6F44F20B7E4980047F659 /* SignupFieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB6F44E20B7E4980047F659 /* SignupFieldType.swift */; };
+		ACB6F45120B7E50A0047F659 /* SignupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB6F45020B7E50A0047F659 /* SignupPresenter.swift */; };
+		ACB6F45320B7E5E60047F659 /* SignupUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB6F45220B7E5E60047F659 /* SignupUserInfo.swift */; };
+		ACB6F45620B7E7340047F659 /* LoginErrorWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB6F45520B7E7340047F659 /* LoginErrorWorker.swift */; };
+		ACB6F45920B7F07E0047F659 /* SignupErrorWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB6F45820B7F07E0047F659 /* SignupErrorWorker.swift */; };
+		ACB6F45B20B7F2680047F659 /* LoginFieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB6F45A20B7F2680047F659 /* LoginFieldType.swift */; };
+		ACB6F45F20B7FA8C0047F659 /* StoryboardConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB6F45E20B7FA8C0047F659 /* StoryboardConstants.swift */; };
+		ACB6F46420B7FB340047F659 /* WordsCountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB6F46320B7FB340047F659 /* WordsCountViewController.swift */; };
+		ACB6F46620B7FC190047F659 /* GlobalRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB6F46520B7FC190047F659 /* GlobalRoute.swift */; };
 		ACF7F5F920B4895700CB6D6D /* UIViewController+HideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7F5F820B4895700CB6D6D /* UIViewController+HideKeyboard.swift */; };
+		ACF7F5FC20B48CD600CB6D6D /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7F5FB20B48CD600CB6D6D /* APIClient.swift */; };
+		ACF7F5FF20B48FCD00CB6D6D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7F5FE20B48FCD00CB6D6D /* Router.swift */; };
+		ACF7F60220B4947600CB6D6D /* Locale.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7F60120B4947600CB6D6D /* Locale.swift */; };
+		ACF7F60520B4950F00CB6D6D /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7F60420B4950F00CB6D6D /* HTTPClient.swift */; };
+		ACF7F60720B4969C00CB6D6D /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7F60620B4969C00CB6D6D /* HTTPStatusCode.swift */; };
+		ACF7F60920B498E300CB6D6D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7F60820B498E300CB6D6D /* User.swift */; };
+		ACF7F60D20B4AC5200CB6D6D /* DataResponseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7F60C20B4AC5200CB6D6D /* DataResponseResult.swift */; };
+		ACF7F61020B4ACB400CB6D6D /* DataResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7F60F20B4ACB400CB6D6D /* DataResponseError.swift */; };
+		E388A11C9DAAAA4485C13124 /* Pods_WordsCount.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C29E22E78D36D5CF04BC6FE0 /* Pods_WordsCount.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7649465D35A08158944EDAE8 /* Pods-WordsCount.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordsCount.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WordsCount/Pods-WordsCount.debug.xcconfig"; sourceTree = "<group>"; };
 		AC8F95AB20B371EE00C12555 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		ACB1F39420B3495100D2A485 /* WordsCount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordsCount.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB1F39720B3495100D2A485 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -33,7 +56,30 @@
 		ACB1F3B820B3539300D2A485 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ACB1F3BC20B3706700D2A485 /* UIDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDecorator.swift; sourceTree = "<group>"; };
 		ACB1F3BF20B370E400D2A485 /* TextConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextConstants.swift; sourceTree = "<group>"; };
+		ACB6F44020B76FC70047F659 /* JSONType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONType.swift; sourceTree = "<group>"; };
+		ACB6F44420B774CD0047F659 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		ACB6F44720B77E1C0047F659 /* LoginUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserInfo.swift; sourceTree = "<group>"; };
+		ACB6F44A20B7808B0047F659 /* AlertMessageShowing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessageShowing.swift; sourceTree = "<group>"; };
+		ACB6F44E20B7E4980047F659 /* SignupFieldType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFieldType.swift; sourceTree = "<group>"; };
+		ACB6F45020B7E50A0047F659 /* SignupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPresenter.swift; sourceTree = "<group>"; };
+		ACB6F45220B7E5E60047F659 /* SignupUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupUserInfo.swift; sourceTree = "<group>"; };
+		ACB6F45520B7E7340047F659 /* LoginErrorWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginErrorWorker.swift; sourceTree = "<group>"; };
+		ACB6F45820B7F07E0047F659 /* SignupErrorWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupErrorWorker.swift; sourceTree = "<group>"; };
+		ACB6F45A20B7F2680047F659 /* LoginFieldType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFieldType.swift; sourceTree = "<group>"; };
+		ACB6F45E20B7FA8C0047F659 /* StoryboardConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardConstants.swift; sourceTree = "<group>"; };
+		ACB6F46320B7FB340047F659 /* WordsCountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsCountViewController.swift; sourceTree = "<group>"; };
+		ACB6F46520B7FC190047F659 /* GlobalRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalRoute.swift; sourceTree = "<group>"; };
 		ACF7F5F820B4895700CB6D6D /* UIViewController+HideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+HideKeyboard.swift"; sourceTree = "<group>"; };
+		ACF7F5FB20B48CD600CB6D6D /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		ACF7F5FE20B48FCD00CB6D6D /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		ACF7F60120B4947600CB6D6D /* Locale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locale.swift; sourceTree = "<group>"; };
+		ACF7F60420B4950F00CB6D6D /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		ACF7F60620B4969C00CB6D6D /* HTTPStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
+		ACF7F60820B498E300CB6D6D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		ACF7F60C20B4AC5200CB6D6D /* DataResponseResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResponseResult.swift; sourceTree = "<group>"; };
+		ACF7F60F20B4ACB400CB6D6D /* DataResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResponseError.swift; sourceTree = "<group>"; };
+		C29E22E78D36D5CF04BC6FE0 /* Pods_WordsCount.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordsCount.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA6C906E1AE2C2FA7C2A2091 /* Pods-WordsCount.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordsCount.release.xcconfig"; path = "Pods/Target Support Files/Pods-WordsCount/Pods-WordsCount.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E388A11C9DAAAA4485C13124 /* Pods_WordsCount.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +99,7 @@
 			children = (
 				AC8F95A920B371D700C12555 /* View */,
 				AC8F95AA20B371DC00C12555 /* Presenter */,
+				ACB6F44D20B7E4800047F659 /* Models */,
 			);
 			path = SignupModule;
 			sourceTree = "<group>";
@@ -67,6 +115,8 @@
 		AC8F95AA20B371DC00C12555 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				ACB6F45020B7E50A0047F659 /* SignupPresenter.swift */,
+				ACB6F45720B7F0580047F659 /* Worker */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -77,6 +127,8 @@
 				ACB1F3A920B3495700D2A485 /* Src */,
 				ACB1F39620B3495100D2A485 /* WordsCount */,
 				ACB1F39520B3495100D2A485 /* Products */,
+				F8258A218DEADF972A78A4AA /* Pods */,
+				CE535F1F9DDFE18136E8181D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,9 +154,11 @@
 		ACB1F3A920B3495700D2A485 /* Src */ = {
 			isa = PBXGroup;
 			children = (
-				ACF7F5F720B4894500CB6D6D /* Extensions */,
+				ACF7F60020B4946B00CB6D6D /* Models */,
 				ACB1F3AC20B3498F00D2A485 /* UserStories */,
 				ACB1F3BA20B3704700D2A485 /* Services */,
+				ACF7F5F720B4894500CB6D6D /* Extensions */,
+				ACB6F44920B780740047F659 /* Protocols */,
 				ACB1F3AB20B3498300D2A485 /* Utilities */,
 			);
 			path = Src;
@@ -131,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				ACB1F3AF20B349A800D2A485 /* WebConstants.swift */,
+				ACB6F45E20B7FA8C0047F659 /* StoryboardConstants.swift */,
 				ACB1F3BF20B370E400D2A485 /* TextConstants.swift */,
 			);
 			path = Constants;
@@ -150,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				ACB1F3B320B34B4500D2A485 /* WordsCount.storyboard */,
+				ACB6F46020B7FB0E0047F659 /* WordsCountModule */,
 			);
 			path = WordsCountUserStory;
 			sourceTree = "<group>";
@@ -157,6 +213,7 @@
 		ACB1F3B520B352EC00D2A485 /* LoginModule */ = {
 			isa = PBXGroup;
 			children = (
+				ACB6F44620B77E0B0047F659 /* Models */,
 				ACB1F3B620B3537000D2A485 /* View */,
 				ACB1F3B720B3537600D2A485 /* Presenter */,
 			);
@@ -174,6 +231,8 @@
 		ACB1F3B720B3537600D2A485 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				ACB6F44420B774CD0047F659 /* LoginPresenter.swift */,
+				ACB6F45420B7E7120047F659 /* Workers */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -181,7 +240,10 @@
 		ACB1F3BA20B3704700D2A485 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				ACF7F5FB20B48CD600CB6D6D /* APIClient.swift */,
+				ACF7F5FD20B48D1A00CB6D6D /* HTTP */,
 				ACB1F3BB20B3705900D2A485 /* UI */,
+				ACB6F45C20B7FA450047F659 /* GlobalRoute */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -194,12 +256,150 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		ACB6F44620B77E0B0047F659 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ACB6F44720B77E1C0047F659 /* LoginUserInfo.swift */,
+				ACB6F45A20B7F2680047F659 /* LoginFieldType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ACB6F44920B780740047F659 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				ACB6F44A20B7808B0047F659 /* AlertMessageShowing.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		ACB6F44D20B7E4800047F659 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ACB6F45220B7E5E60047F659 /* SignupUserInfo.swift */,
+				ACB6F44E20B7E4980047F659 /* SignupFieldType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ACB6F45420B7E7120047F659 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				ACB6F45520B7E7340047F659 /* LoginErrorWorker.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		ACB6F45720B7F0580047F659 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				ACB6F45820B7F07E0047F659 /* SignupErrorWorker.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		ACB6F45C20B7FA450047F659 /* GlobalRoute */ = {
+			isa = PBXGroup;
+			children = (
+				ACB6F46520B7FC190047F659 /* GlobalRoute.swift */,
+			);
+			path = GlobalRoute;
+			sourceTree = "<group>";
+		};
+		ACB6F46020B7FB0E0047F659 /* WordsCountModule */ = {
+			isa = PBXGroup;
+			children = (
+				ACB6F46120B7FB180047F659 /* View */,
+				ACB6F46220B7FB1C0047F659 /* Preseenter */,
+			);
+			path = WordsCountModule;
+			sourceTree = "<group>";
+		};
+		ACB6F46120B7FB180047F659 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ACB6F46320B7FB340047F659 /* WordsCountViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ACB6F46220B7FB1C0047F659 /* Preseenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Preseenter;
+			sourceTree = "<group>";
+		};
 		ACF7F5F720B4894500CB6D6D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				ACF7F5F820B4895700CB6D6D /* UIViewController+HideKeyboard.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ACF7F5FD20B48D1A00CB6D6D /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				ACF7F60420B4950F00CB6D6D /* HTTPClient.swift */,
+				ACB6F44020B76FC70047F659 /* JSONType.swift */,
+				ACF7F60620B4969C00CB6D6D /* HTTPStatusCode.swift */,
+				ACF7F60C20B4AC5200CB6D6D /* DataResponseResult.swift */,
+				ACF7F5FE20B48FCD00CB6D6D /* Router.swift */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		ACF7F60020B4946B00CB6D6D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ACF7F60E20B4AC9700CB6D6D /* HTTP */,
+				ACF7F60A20B498E800CB6D6D /* User */,
+				ACF7F60B20B498F200CB6D6D /* Locale */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ACF7F60A20B498E800CB6D6D /* User */ = {
+			isa = PBXGroup;
+			children = (
+				ACF7F60820B498E300CB6D6D /* User.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		ACF7F60B20B498F200CB6D6D /* Locale */ = {
+			isa = PBXGroup;
+			children = (
+				ACF7F60120B4947600CB6D6D /* Locale.swift */,
+			);
+			name = Locale;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		ACF7F60E20B4AC9700CB6D6D /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				ACF7F60F20B4ACB400CB6D6D /* DataResponseError.swift */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		CE535F1F9DDFE18136E8181D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C29E22E78D36D5CF04BC6FE0 /* Pods_WordsCount.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8258A218DEADF972A78A4AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7649465D35A08158944EDAE8 /* Pods-WordsCount.debug.xcconfig */,
+				CA6C906E1AE2C2FA7C2A2091 /* Pods-WordsCount.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,9 +409,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACB1F3A620B3495100D2A485 /* Build configuration list for PBXNativeTarget "WordsCount" */;
 			buildPhases = (
+				6480AC9F0CFE0BC059C4D7BF /* [CP] Check Pods Manifest.lock */,
 				ACB1F39020B3495100D2A485 /* Sources */,
 				ACB1F39120B3495100D2A485 /* Frameworks */,
 				ACB1F39220B3495100D2A485 /* Resources */,
+				E9BC4FA240891D272856E5BD /* [CP] Embed Pods Frameworks */,
+				6D6590055345217BDF01C216 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -270,16 +473,91 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6480AC9F0CFE0BC059C4D7BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WordsCount-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D6590055345217BDF01C216 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WordsCount/Pods-WordsCount-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9BC4FA240891D272856E5BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WordsCount/Pods-WordsCount-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WordsCount/Pods-WordsCount-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ACB1F39020B3495100D2A485 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACB6F45B20B7F2680047F659 /* LoginFieldType.swift in Sources */,
+				ACF7F60920B498E300CB6D6D /* User.swift in Sources */,
+				ACB6F44B20B7808B0047F659 /* AlertMessageShowing.swift in Sources */,
 				AC8F95AC20B371EE00C12555 /* SignupViewController.swift in Sources */,
+				ACB6F44820B77E1C0047F659 /* LoginUserInfo.swift in Sources */,
+				ACB6F45920B7F07E0047F659 /* SignupErrorWorker.swift in Sources */,
+				ACB6F45320B7E5E60047F659 /* SignupUserInfo.swift in Sources */,
 				ACB1F3B920B3539300D2A485 /* LoginViewController.swift in Sources */,
 				ACB1F3BD20B3706700D2A485 /* UIDecorator.swift in Sources */,
+				ACF7F5FC20B48CD600CB6D6D /* APIClient.swift in Sources */,
+				ACB6F45F20B7FA8C0047F659 /* StoryboardConstants.swift in Sources */,
+				ACB6F44120B76FC70047F659 /* JSONType.swift in Sources */,
+				ACB6F46420B7FB340047F659 /* WordsCountViewController.swift in Sources */,
+				ACF7F5FF20B48FCD00CB6D6D /* Router.swift in Sources */,
+				ACF7F60220B4947600CB6D6D /* Locale.swift in Sources */,
+				ACF7F60720B4969C00CB6D6D /* HTTPStatusCode.swift in Sources */,
+				ACB6F44520B774CD0047F659 /* LoginPresenter.swift in Sources */,
+				ACB6F44F20B7E4980047F659 /* SignupFieldType.swift in Sources */,
+				ACB6F45620B7E7340047F659 /* LoginErrorWorker.swift in Sources */,
+				ACB6F45120B7E50A0047F659 /* SignupPresenter.swift in Sources */,
+				ACF7F60520B4950F00CB6D6D /* HTTPClient.swift in Sources */,
+				ACF7F61020B4ACB400CB6D6D /* DataResponseError.swift in Sources */,
 				ACF7F5F920B4895700CB6D6D /* UIViewController+HideKeyboard.swift in Sources */,
 				ACB1F39820B3495100D2A485 /* AppDelegate.swift in Sources */,
+				ACB6F46620B7FC190047F659 /* GlobalRoute.swift in Sources */,
+				ACF7F60D20B4AC5200CB6D6D /* DataResponseResult.swift in Sources */,
 				ACB1F3C020B370E400D2A485 /* TextConstants.swift in Sources */,
 				ACB1F3B020B349A800D2A485 /* WebConstants.swift in Sources */,
 			);
@@ -416,6 +694,7 @@
 		};
 		ACB1F3A720B3495100D2A485 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7649465D35A08158944EDAE8 /* Pods-WordsCount.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -432,6 +711,7 @@
 		};
 		ACB1F3A820B3495100D2A485 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA6C906E1AE2C2FA7C2A2091 /* Pods-WordsCount.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
