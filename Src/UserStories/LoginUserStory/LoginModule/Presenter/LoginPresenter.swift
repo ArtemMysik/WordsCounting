@@ -19,6 +19,7 @@ class LoginPresenter: LoginViewOutput {
     weak var view: LoginViewInput!
     fileprivate var loginItem = LoginUserInfo()
     fileprivate var errorWorker = LoginErrorWorker()
+    fileprivate var isWaitingForLoginResult = false
     
     //MARK: - Life Cycle
     required init(view: LoginViewInput) {
@@ -48,7 +49,16 @@ class LoginPresenter: LoginViewOutput {
 extension LoginPresenter {
     
     fileprivate func proceedLogin() {
+        guard !isWaitingForLoginResult else { return }
+        
+        isWaitingForLoginResult = true
+        view.startActivityIndicator()
+        
         APIClient.shared.login(email: loginItem.email, password: loginItem.password) { [weak self] (response) in
+            
+            self?.isWaitingForLoginResult = false
+            self?.view.stopActivityIndicator()
+            
             switch response {
             case .success(_):
                 GlobalRoute.setScreen(type: .wordsCount)
@@ -58,6 +68,10 @@ extension LoginPresenter {
                 
             case .fail(let message):
                 self?.view.showError(message)
+                self?.hideErrors()
+                
+            default:
+                break
             }
         }
     }
@@ -74,6 +88,11 @@ extension LoginPresenter {
         } else {
             view.changeVisibilityErrrorLabel(type: type, isHidden: true, text: nil)
         }
+    }
+    
+    private func hideErrors() {
+        view.changeVisibilityErrrorLabel(type: .email, isHidden: true, text: nil)
+        view.changeVisibilityErrrorLabel(type: .password, isHidden: true, text: nil)
     }
     
 }

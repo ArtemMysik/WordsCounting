@@ -8,8 +8,11 @@
 
 import Foundation
 
+struct EmptySuccess: Decodable { }
+
 enum DataResponseRessult<T: Decodable> {
     case success(T)
+    case stringSuccess(String)
     case errors([DataResponseError])
     case fail(message: String)
 }

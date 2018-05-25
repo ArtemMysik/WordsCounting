@@ -35,7 +35,7 @@ enum WebConstants {
     static let personPath = Router.getPath + "/person/"
     
     //MARK: - Parameters
-    static let localeKey = "Locale"
+    static let localeKey = "locale"
     static let emailKey = "email"
     static let passwordKey = "password"
     static let nicknameKey = "name"

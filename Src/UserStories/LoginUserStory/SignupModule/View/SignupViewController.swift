@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol SignupViewInput: class {
+protocol SignupViewInput: ActivityShowable {
     func showError(_ string: String)
     func changeVisibilityErrrorLabel(type: SignupFieldType, isHidden: Bool, text: String?)
 }
@@ -25,6 +25,7 @@ class SignupViewController: UIViewController, AlertMessageShowing {
     @IBOutlet weak var passwordErrorLabel: UILabel!
     
     var presenter: SignupViewOutput!
+    weak var activityIndicator: UIView?
     
     //MARK: - Life Cycle
     required init?(coder aDecoder: NSCoder) {

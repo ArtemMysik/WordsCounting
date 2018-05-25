@@ -62,6 +62,8 @@ class HTTPClient {
         if let data = json[WebConstants.HTTPClient.dataKey] as? JSON,
             !data.isEmpty {
             formReplyOnStatusCodeWithContent(data: .plain(data), statusCode: statusCode, done: done)
+        } else if let data = json[WebConstants.HTTPClient.dataKey] as? String {
+            formReplyOnStatusCodeWithContent(data: .string(data), statusCode: statusCode, done: done)
         } else if let data = json[WebConstants.HTTPClient.errorsKey] as? [JSON],
             !data.isEmpty {
             formReplyOnStatusCodeWithContent(data: .array(data), statusCode: statusCode, done: done)
@@ -75,18 +77,21 @@ class HTTPClient {
         
         switch statusCode {
         case .ok:
-            guard case .plain(let json) = data,
+            if case .plain(let json) = data,
                 let jsonData = try? JSONSerialization.data(withJSONObject: json, options: .prettyPrinted),
                 let data = String(data: jsonData, encoding: .utf8)?.data(using: .utf8),
-                let model = try? decoder.decode(T.self, from: data) else {
-                done(.fail(message: WebConstants.FailMessages.internalError))
+                let model = try? decoder.decode(T.self, from: data) {
+                done(.success(model))
                 
                 return
+            } else if case .string(let string) = data {
+                done(.stringSuccess(string))
+            } else {
+                done(.fail(message: WebConstants.FailMessages.internalError))
             }
             
-            done(.success(model))
             
-        case .generalError, .validation, .new:
+        case .generalError, .validation, .methodNotAllowed:
             if case .array(let jsonArray) = data {
                 let dataArray = jsonArray.flatMap({ try? JSONSerialization.data(withJSONObject: $0, options: .prettyPrinted) })
                 let errorsArray = dataArray.flatMap({try? decoder.decode(DataResponseError.self, from: $0)})

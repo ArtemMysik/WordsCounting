@@ -1,5 +1,5 @@
 //
-//  JSONType.swift
+//  CharacterQuantityViewModel.swift
 //  WordsCount
 //
 //  Created by   Artem on 25.05.18.
@@ -8,8 +8,7 @@
 
 import Foundation
 
-enum JSONType {
-    case plain(JSON)
-    case array([JSON])
-    case string(String)
+struct CharacterQuantityViewModel {
+    var name: String
+    var quantity: String
 }

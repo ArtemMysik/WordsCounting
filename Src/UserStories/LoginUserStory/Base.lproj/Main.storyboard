@@ -26,7 +26,7 @@
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bmf-Wh-7hX">
                                                 <rect key="frame" x="0.0" y="0.0" width="275" height="40"/>
-                                                <color key="backgroundColor" red="0.99861199239999998" green="0.99861199239999998" blue="0.99861199239999998" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" red="0.24716623130000001" green="0.24715472760000001" blue="0.24715961519999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="72B-i0-QeC"/>
                                                 </constraints>
@@ -42,7 +42,7 @@
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V5b-bn-xb7">
                                                 <rect key="frame" x="0.0" y="50" width="275" height="40"/>
-                                                <color key="backgroundColor" red="0.99861199239999998" green="0.99861199239999998" blue="0.99861199239999998" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" red="0.24716623130000001" green="0.24715472760000001" blue="0.24715961519999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="go" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
@@ -157,7 +157,7 @@
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U19-54-wCy">
                                                 <rect key="frame" x="0.0" y="0.0" width="275" height="40"/>
-                                                <color key="backgroundColor" red="0.99861199239999998" green="0.99861199239999998" blue="0.99861199239999998" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" red="0.24716623130000001" green="0.24715472760000001" blue="0.24715961519999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="ATA-YC-AmZ"/>
                                                 </constraints>
@@ -173,7 +173,7 @@
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="14V-iZ-kit">
                                                 <rect key="frame" x="0.0" y="50" width="275" height="40"/>
-                                                <color key="backgroundColor" red="0.99861199239999998" green="0.99861199239999998" blue="0.99861199239999998" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" red="0.24716623130000001" green="0.24715472760000001" blue="0.24715961519999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="go" smartDashesType="no" smartQuotesType="no" textContentType="email"/>
@@ -186,7 +186,7 @@
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SD1-ZO-Ypv">
                                                 <rect key="frame" x="0.0" y="100" width="275" height="40"/>
-                                                <color key="backgroundColor" red="0.99861199239999998" green="0.99861199239999998" blue="0.99861199239999998" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" red="0.24716623130000001" green="0.24715472760000001" blue="0.24715961519999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="go" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>

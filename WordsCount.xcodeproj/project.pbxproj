@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC57979720B8288100BB7510 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC57979620B8288100BB7510 /* TextViewController.swift */; };
+		AC5884BC20B845F7002FA65C /* UIViewController+ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5884BB20B845F7002FA65C /* UIViewController+ActivityIndicator.swift */; };
+		AC5884BE20B84B12002FA65C /* ActivityShowable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5884BD20B84B12002FA65C /* ActivityShowable.swift */; };
 		AC8F95AC20B371EE00C12555 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8F95AB20B371EE00C12555 /* SignupViewController.swift */; };
 		ACB1F39820B3495100D2A485 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB1F39720B3495100D2A485 /* AppDelegate.swift */; };
 		ACB1F39D20B3495100D2A485 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB1F39B20B3495100D2A485 /* Main.storyboard */; };
@@ -30,6 +33,9 @@
 		ACB6F45F20B7FA8C0047F659 /* StoryboardConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB6F45E20B7FA8C0047F659 /* StoryboardConstants.swift */; };
 		ACB6F46420B7FB340047F659 /* WordsCountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB6F46320B7FB340047F659 /* WordsCountViewController.swift */; };
 		ACB6F46620B7FC190047F659 /* GlobalRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB6F46520B7FC190047F659 /* GlobalRoute.swift */; };
+		ACB6F46820B813180047F659 /* WordsCountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB6F46720B813180047F659 /* WordsCountPresenter.swift */; };
+		ACB6F46B20B816910047F659 /* WordsCountDataCreationWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB6F46A20B816910047F659 /* WordsCountDataCreationWorker.swift */; };
+		ACB6F46E20B8199A0047F659 /* CharacterQuantityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB6F46D20B8199A0047F659 /* CharacterQuantityViewModel.swift */; };
 		ACF7F5F920B4895700CB6D6D /* UIViewController+HideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7F5F820B4895700CB6D6D /* UIViewController+HideKeyboard.swift */; };
 		ACF7F5FC20B48CD600CB6D6D /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7F5FB20B48CD600CB6D6D /* APIClient.swift */; };
 		ACF7F5FF20B48FCD00CB6D6D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7F5FE20B48FCD00CB6D6D /* Router.swift */; };
@@ -44,6 +50,9 @@
 
 /* Begin PBXFileReference section */
 		7649465D35A08158944EDAE8 /* Pods-WordsCount.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordsCount.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WordsCount/Pods-WordsCount.debug.xcconfig"; sourceTree = "<group>"; };
+		AC57979620B8288100BB7510 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		AC5884BB20B845F7002FA65C /* UIViewController+ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ActivityIndicator.swift"; sourceTree = "<group>"; };
+		AC5884BD20B84B12002FA65C /* ActivityShowable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityShowable.swift; sourceTree = "<group>"; };
 		AC8F95AB20B371EE00C12555 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		ACB1F39420B3495100D2A485 /* WordsCount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordsCount.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB1F39720B3495100D2A485 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +78,9 @@
 		ACB6F45E20B7FA8C0047F659 /* StoryboardConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardConstants.swift; sourceTree = "<group>"; };
 		ACB6F46320B7FB340047F659 /* WordsCountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsCountViewController.swift; sourceTree = "<group>"; };
 		ACB6F46520B7FC190047F659 /* GlobalRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalRoute.swift; sourceTree = "<group>"; };
+		ACB6F46720B813180047F659 /* WordsCountPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsCountPresenter.swift; sourceTree = "<group>"; };
+		ACB6F46A20B816910047F659 /* WordsCountDataCreationWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsCountDataCreationWorker.swift; sourceTree = "<group>"; };
+		ACB6F46D20B8199A0047F659 /* CharacterQuantityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterQuantityViewModel.swift; sourceTree = "<group>"; };
 		ACF7F5F820B4895700CB6D6D /* UIViewController+HideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+HideKeyboard.swift"; sourceTree = "<group>"; };
 		ACF7F5FB20B48CD600CB6D6D /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		ACF7F5FE20B48FCD00CB6D6D /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -94,6 +106,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC57979520B8286200BB7510 /* TextModule */ = {
+			isa = PBXGroup;
+			children = (
+				AC57979620B8288100BB7510 /* TextViewController.swift */,
+			);
+			path = TextModule;
+			sourceTree = "<group>";
+		};
 		AC8F95A820B371C900C12555 /* SignupModule */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,9 +174,9 @@
 		ACB1F3A920B3495700D2A485 /* Src */ = {
 			isa = PBXGroup;
 			children = (
-				ACF7F60020B4946B00CB6D6D /* Models */,
 				ACB1F3AC20B3498F00D2A485 /* UserStories */,
 				ACB1F3BA20B3704700D2A485 /* Services */,
+				ACF7F60020B4946B00CB6D6D /* Models */,
 				ACF7F5F720B4894500CB6D6D /* Extensions */,
 				ACB6F44920B780740047F659 /* Protocols */,
 				ACB1F3AB20B3498300D2A485 /* Utilities */,
@@ -206,6 +226,7 @@
 			children = (
 				ACB1F3B320B34B4500D2A485 /* WordsCount.storyboard */,
 				ACB6F46020B7FB0E0047F659 /* WordsCountModule */,
+				AC57979520B8286200BB7510 /* TextModule */,
 			);
 			path = WordsCountUserStory;
 			sourceTree = "<group>";
@@ -213,9 +234,9 @@
 		ACB1F3B520B352EC00D2A485 /* LoginModule */ = {
 			isa = PBXGroup;
 			children = (
-				ACB6F44620B77E0B0047F659 /* Models */,
 				ACB1F3B620B3537000D2A485 /* View */,
 				ACB1F3B720B3537600D2A485 /* Presenter */,
+				ACB6F44620B77E0B0047F659 /* Models */,
 			);
 			path = LoginModule;
 			sourceTree = "<group>";
@@ -269,6 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				ACB6F44A20B7808B0047F659 /* AlertMessageShowing.swift */,
+				AC5884BD20B84B12002FA65C /* ActivityShowable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -311,6 +333,7 @@
 			children = (
 				ACB6F46120B7FB180047F659 /* View */,
 				ACB6F46220B7FB1C0047F659 /* Preseenter */,
+				ACB6F46920B816690047F659 /* Workers */,
 			);
 			path = WordsCountModule;
 			sourceTree = "<group>";
@@ -326,14 +349,33 @@
 		ACB6F46220B7FB1C0047F659 /* Preseenter */ = {
 			isa = PBXGroup;
 			children = (
+				ACB6F46720B813180047F659 /* WordsCountPresenter.swift */,
+				ACB6F46C20B8197A0047F659 /* ViewModels */,
 			);
 			path = Preseenter;
+			sourceTree = "<group>";
+		};
+		ACB6F46920B816690047F659 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				ACB6F46A20B816910047F659 /* WordsCountDataCreationWorker.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		ACB6F46C20B8197A0047F659 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				ACB6F46D20B8199A0047F659 /* CharacterQuantityViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		ACF7F5F720B4894500CB6D6D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				ACF7F5F820B4895700CB6D6D /* UIViewController+HideKeyboard.swift */,
+				AC5884BB20B845F7002FA65C /* UIViewController+ActivityIndicator.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -533,6 +575,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACB6F45B20B7F2680047F659 /* LoginFieldType.swift in Sources */,
+				ACB6F46820B813180047F659 /* WordsCountPresenter.swift in Sources */,
 				ACF7F60920B498E300CB6D6D /* User.swift in Sources */,
 				ACB6F44B20B7808B0047F659 /* AlertMessageShowing.swift in Sources */,
 				AC8F95AC20B371EE00C12555 /* SignupViewController.swift in Sources */,
@@ -540,18 +583,23 @@
 				ACB6F45920B7F07E0047F659 /* SignupErrorWorker.swift in Sources */,
 				ACB6F45320B7E5E60047F659 /* SignupUserInfo.swift in Sources */,
 				ACB1F3B920B3539300D2A485 /* LoginViewController.swift in Sources */,
+				AC5884BC20B845F7002FA65C /* UIViewController+ActivityIndicator.swift in Sources */,
 				ACB1F3BD20B3706700D2A485 /* UIDecorator.swift in Sources */,
 				ACF7F5FC20B48CD600CB6D6D /* APIClient.swift in Sources */,
 				ACB6F45F20B7FA8C0047F659 /* StoryboardConstants.swift in Sources */,
 				ACB6F44120B76FC70047F659 /* JSONType.swift in Sources */,
 				ACB6F46420B7FB340047F659 /* WordsCountViewController.swift in Sources */,
+				ACB6F46B20B816910047F659 /* WordsCountDataCreationWorker.swift in Sources */,
 				ACF7F5FF20B48FCD00CB6D6D /* Router.swift in Sources */,
+				ACB6F46E20B8199A0047F659 /* CharacterQuantityViewModel.swift in Sources */,
 				ACF7F60220B4947600CB6D6D /* Locale.swift in Sources */,
 				ACF7F60720B4969C00CB6D6D /* HTTPStatusCode.swift in Sources */,
 				ACB6F44520B774CD0047F659 /* LoginPresenter.swift in Sources */,
+				AC5884BE20B84B12002FA65C /* ActivityShowable.swift in Sources */,
 				ACB6F44F20B7E4980047F659 /* SignupFieldType.swift in Sources */,
 				ACB6F45620B7E7340047F659 /* LoginErrorWorker.swift in Sources */,
 				ACB6F45120B7E50A0047F659 /* SignupPresenter.swift in Sources */,
+				AC57979720B8288100BB7510 /* TextViewController.swift in Sources */,
 				ACF7F60520B4950F00CB6D6D /* HTTPClient.swift in Sources */,
 				ACF7F61020B4ACB400CB6D6D /* DataResponseError.swift in Sources */,
 				ACF7F5F920B4895700CB6D6D /* UIViewController+HideKeyboard.swift in Sources */,
@@ -700,7 +748,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W8QQ885R5K;
 				INFOPLIST_FILE = WordsCount/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wordscount.artem.mysik.WordsCount;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -717,7 +765,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W8QQ885R5K;
 				INFOPLIST_FILE = WordsCount/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wordscount.artem.mysik.WordsCount;
 				PRODUCT_NAME = "$(TARGET_NAME)";

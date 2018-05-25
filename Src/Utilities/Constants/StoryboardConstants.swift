@@ -20,4 +20,8 @@ enum StoryboardConstants {
         static let wordsCount = "WordsCount"
     }
     
+    enum CellID {
+        static let wordCountCell = "WordCountCell"
+    }
+    
 }

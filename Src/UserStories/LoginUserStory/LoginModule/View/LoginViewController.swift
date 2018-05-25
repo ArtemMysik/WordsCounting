@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol LoginViewInput: class {
+protocol LoginViewInput: ActivityShowable {
     func changeVisibilityErrrorLabel(type: LoginFieldType, isHidden: Bool, text: String?)
     func showError(_ string: String)
 }
@@ -24,6 +24,7 @@ class LoginViewController: UIViewController, AlertMessageShowing {
     @IBOutlet weak var passwordErrorLabel: UILabel!
     
     var presenter: LoginViewOutput!
+    weak var activityIndicator: UIView?
     
     //MARK: - Life Cycle
     required init?(coder aDecoder: NSCoder) {
@@ -81,7 +82,6 @@ extension LoginViewController: LoginViewInput {
     func showError(_ string: String) {
         showAlert(message: string, handler: nil)
     }
-    
 }
 
 //MARK: - UITextFieldDelegate

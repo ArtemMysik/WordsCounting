@@ -10,6 +10,7 @@ import Foundation
 import Alamofire
 
 typealias UserResponse = (DataResponseRessult<User>) -> Void
+typealias EmptyModelResponse = (DataResponseRessult<EmptySuccess>) -> Void
 
 class APIClient {
     static let shared = APIClient()
@@ -37,6 +38,11 @@ extension APIClient {
         httpClient.request(router: router) { [weak self] (result: DataResponseRessult<User>) in
             self?.proceedUserResult(result: result, done: done)
         }
+    }
+    
+    func getText(done: @escaping EmptyModelResponse) {
+        let router = Router.apiGetText
+        httpClient.request(router: router, completion: done)
     }
     
     //MARK: - Helpers

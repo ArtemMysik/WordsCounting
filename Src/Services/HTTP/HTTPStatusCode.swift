@@ -18,7 +18,7 @@ enum HTTPStatusCode: Int {
     case unauthorized = 401
     case forbidden = 403
     case notFound = 404
-    case new = 405
+    case methodNotAllowed = 405
     case generalError = 418
     case validation = 422
     

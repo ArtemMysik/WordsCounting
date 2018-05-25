@@ -19,6 +19,7 @@ class SignupPresenter: SignupViewOutput {
     weak var view: SignupViewInput!
     fileprivate var signupItem = SignupUserInfo()
     fileprivate var errorWorker = SignupErrorWorker()
+    fileprivate var isWaitingForSignupResult = false
     
     //MARK: - Life Cycle
     required init(view: SignupViewInput) {
@@ -51,18 +52,29 @@ class SignupPresenter: SignupViewOutput {
 extension SignupPresenter {
     
     fileprivate func proceedSignup() {
+        guard !isWaitingForSignupResult else { return }
+        isWaitingForSignupResult = true
+        view.startActivityIndicator()
+        
         APIClient.shared.signUp(nickname: signupItem.nickname,
                                 email: signupItem.email,
                                 password: signupItem.password) { [weak self] (result) in
+                                    self?.isWaitingForSignupResult = false
+                                    self?.view.stopActivityIndicator()
+                                    
                                     switch result {
                                     case .success(_):
                                         GlobalRoute.setScreen(type: .wordsCount)
                                         
                                     case .fail(let message):
                                         self?.view.showError(message)
+                                        self?.hideErrors()
                                         
                                     case .errors(let errors):
                                         self?.proceedErrors(errors)
+                                        
+                                    default:
+                                        break
                                     }
         }
     }
@@ -80,6 +92,12 @@ extension SignupPresenter {
         } else {
             view.changeVisibilityErrrorLabel(type: type, isHidden: true, text: nil)
         }
+    }
+    
+    private func hideErrors() {
+        view.changeVisibilityErrrorLabel(type: .email, isHidden: true, text: nil)
+        view.changeVisibilityErrrorLabel(type: .password, isHidden: true, text: nil)
+        view.changeVisibilityErrrorLabel(type: .nickname, isHidden: true, text: nil)
     }
     
 }
